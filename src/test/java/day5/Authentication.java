@@ -12,7 +12,7 @@ public class Authentication {
 	public void testBasicAuth() {
 		
 		given()
-		  .auth().basic("postman", "password")
+		  .auth().basic("username", "password")
 		
 		.when()
 		  .get("https://postman-echo.com/basic-auth")
@@ -29,7 +29,7 @@ public class Authentication {
 	public void testDigestAuth() {
 		
 		given()
-		  .auth().digest("postman", "password")
+		  .auth().digest("username", "password")
 		
 		.when()
 		  .get("https://postman-echo.com/basic-auth")
@@ -46,7 +46,7 @@ public class Authentication {
 	public void testPremtiveAuth() {
 		
 		given()
-		  .auth().preemptive().basic("postman", "password")
+		  .auth().preemptive().basic("username", "password")
 		
 		.when()
 		  .get("https://postman-echo.com/basic-auth")
@@ -63,6 +63,7 @@ public class Authentication {
 	public void testBearerTokenAuth() {
 		
 		//Create a String obeject and add in given headers "BrererToken" 
+		System.out.println("------");
 		
 		given()
 	//	  .headers("Authorization" ,"Bearer "+BearerToken)
