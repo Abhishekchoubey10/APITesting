@@ -27,7 +27,7 @@ public class CreateUser {
 		data.put("email", faker.internet().emailAddress());
 		data.put("status", "inactive");
 		
-		String bearerToken ="2fdaf9a021f14137192afa000dd3c2cbad4833aaf52f2c106a9b728d0b003455";
+		String bearerToken ="Add git personal token here";
 		
 
 		 RequestSpecification request = given()

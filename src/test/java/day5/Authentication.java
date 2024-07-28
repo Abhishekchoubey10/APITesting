@@ -62,10 +62,10 @@ public class Authentication {
 	@Test(priority=4)
 	public void testBearerTokenAuth() {
 		
-		String BearerToken = "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";
+		//Create a String obeject and add in given headers "BrererToken" 
 		
 		given()
-		  .headers("Authorization" ,"Bearer "+BearerToken)
+	//	  .headers("Authorization" ,"Bearer "+BearerToken)
 		
 		.when()
 		  .get("https://api.github.com/user/repos")
