@@ -6,7 +6,4 @@ import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 
 
-public class Authentication {
-
-
-}
+public class Authentication {}
