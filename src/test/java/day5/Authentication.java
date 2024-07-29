@@ -118,7 +118,7 @@ public class Authentication {
 
 		
 
-		//Create a String obeject and add in given headers "BrererToken" 
+		//Create a String obeject and add in given headers "BearerToken" 
 
 		System.out.println("------");
 
